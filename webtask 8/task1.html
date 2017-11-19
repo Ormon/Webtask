@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<style>
+			#news{
+				border:1px solid red;
+				width:400px;
+				height:300px;
+			}
+		</style>
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/A6A91E31-4564-AF44-948B-CBE3BCFF0119/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/9814A27F-35D1-394C-B46F-882194C3B87C/abn/main.css"/></head>
+	<body>
+		<div id="news"></div>
+		<button id="sport" value='http://demo4296963.mockable.io/news-sport' onClick="onClick(value);">Sport news</button>
+		<button id="politics" value='http://demo4296963.mockable.io/news-politics' onClick='onClick(value);'>Politics news</button>
+		<button id="bussiness" value='http://demo4296963.mockable.io/news-bussiness' onClick="onClick(value);">Bussiness news</button>
+		<button type="submit" class="signupbtn"><a href ="task2.html">Task2</a></button>
+		
+		<script>
+			function onClick(value){
+				fetch(value).then(onResponse,onError).then(onS);
+			}
+			function onS(text){
+				let news = document.getElementById('news');
+				news.innerHTML = text;
+			}
+			function onResponse(response){
+				return response.text();
+			}
+			function onError(error){
+				console.log('Error: ' + error);
+			}
+		</script>
+	</body>
+</html>
