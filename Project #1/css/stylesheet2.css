@@ -67,6 +67,7 @@ body{
 	text-align:center;
 	transition: all 1s;
 }
+
 .a{
 	width:100%;
 	height:100px;
@@ -84,20 +85,12 @@ body{
 	position:fixed;
 
 }
-.wrapper{
-	z-index:10;
-	position:relative;
-	height:100%;
-	width:1000px;
-	float:center;
-	margin:auto;
-	margin-bottom:10px;
+.column:hover{
+	height: 800px;
+}
 
-}
-.wrapper .text h1{
-	text-align:center;
-	font-size:32px;
-}
+
+
 .menu .eagle1{
 	position:absolute;
 	width:500px;
@@ -106,22 +99,7 @@ body{
 	float:right;
 	
 }
-div.gallery  {
-	border:2px solid grey;
-	border-radius:10px;
-	background-color: white;
-    
-	border-radius: 10px; 
-	float: left;
-	transition: all .2s ease-in-out;
-	margin-top:-4px;
-	width: 200px;
-	height:200px;
-	margin-left:10px;
-	margin-top:10px;
-	margin-bottom:10px;
-	margin-right:10px;
-}
+
 .a {
 	color:white;
 	z-index: 10;
@@ -129,30 +107,8 @@ div.gallery  {
 	text-align: center;
 	visibility: hidden;
 }
-div.gallery:hover {
 	
-	transform: scale(1.3);
-	border: 1px solid #777;
-}
-div.gallery:hover .a {
-	transform: scale(1.3);
-	transition-duration:0.3s;
-	visibility: visible;
-	font-size:20px;
-}
 
-div.gallery:hover .b {
-	transform: scale(1.3);
-	transition-duration:0.3s;
-	visibility: visible;
-	font-size:12px;
-}
-
-div.gallery img {
-	border-radius:10px;
-	width: 200px;
-    height: 200px;
-}
 
 .menu ul li:hover{
 	transform:scale(1.2);
