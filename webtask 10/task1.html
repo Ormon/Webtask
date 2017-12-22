@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<style>
+			#first, #second {
+				padding: 14px;
+				display: inline-block;
+			}
+			#first p, #second div {
+				margin-top: 0;
+				margin-bottom: 14px;
+			}
+			#second div {
+				height: 18px;
+			}
+			#attributes label {
+				display: block;
+				margin-bottom: inherit;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="tassk1.php">
+			<div id="first">
+				<p>Maker & Model :</p>
+				<p>Price :</p>
+				<p>Condition :</p>
+				<p>Type :</p>
+				<p></br></p>
+				<p>Attributes :</p>
+				<input type="submit" value="Submit"/>
+			</div>
+			<div id="second">
+				<div>
+					<select name="model">
+						<option value="BMW">BMW</option>
+						<option value="Audi">Audi</option>
+						<option value="Toyota">Toyota</option>
+					</select>
+				</div>
+				<div>
+					<input type="number" name="cost">
+				</div>
+				<div>
+					<label><input type="radio" name="year" value="new"/>New</label>
+					<label><input type="radio" name="year" value="old"/>Old</label>
+				</div>
+				<div>
+					<select name="Type">
+						<option value="Coupe">Coupe</option> 
+						<option value="Sedan">Sedan</option>
+						<option value="Hatchback">Hatchback</option>
+					</select>
+				</div>
+				<div id="attributes">
+					<label><input type="checkbox" name="att[]" id="att" value="cd/dvd">CD/DVD</label>
+					<label><input type="checkbox" name="att[]" id="att" value="cruise control" >Cruise Control</label>
+					<label><input type="checkbox" name="att[]" id="att" value="seat heating " >Seat heating</label>
+				</div>
+				
+			</div>
+		</form>
+	</body>
+</html>
+
